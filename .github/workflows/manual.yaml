@@ -1,0 +1,10 @@
+name: Manual
+
+on: [workflow_dispacth]
+
+jons:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ngomong-lagi
+        run: echo "ngomong lagi hehe"
