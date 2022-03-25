@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ngomong-lagi
-        run: echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\!"
+        run: echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
