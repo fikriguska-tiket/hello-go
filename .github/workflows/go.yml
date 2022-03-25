@@ -25,4 +25,4 @@ jobs:
       run: go test -v ./...
 
     - name: Ngomong
-      rune: echo "selesaii"
+      run: echo "selesaii"
