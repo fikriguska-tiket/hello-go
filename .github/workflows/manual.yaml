@@ -1,14 +1,7 @@
 name: Manual
 
-on: 
-  workflow_dispatch:
-    inputs:
-      name:
-        description: "the name"
-        required: true
-        default: "bintang"
-      tampan:
-        required: false
+on: [push]
+
 
 env:
   lol: "haha"
