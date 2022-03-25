@@ -20,5 +20,4 @@ jobs:
       - name: ngomong-lagi
         run: |
           echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
-          lol=kwkwkw          
-          echo "$lol"
+          env
