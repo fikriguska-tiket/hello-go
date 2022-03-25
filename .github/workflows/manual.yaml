@@ -10,10 +10,14 @@ on:
       tampan:
         required: false
 
+env:
+  lol: "haha"
 
 jobs:
   jalanin-aja:
     runs-on: ubuntu-latest
     steps:
       - name: ngomong-lagi
-        run: echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
+        run: | 
+        echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
+        echo "$lol"
