@@ -1,6 +1,6 @@
 name: Manual
 
-on: [workflow_dispacth]
+on: [workflow_dispatch]
 
 jons:
   build:
