@@ -7,4 +7,4 @@ jons:
     runs-on: ubuntu-latest
     steps:
       - name: ngomong-lagi
-        run: echo "ngomong lagi hehe"
+        run: echo "ngomong lagi hehee"
