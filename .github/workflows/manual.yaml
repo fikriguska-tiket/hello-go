@@ -3,7 +3,7 @@ name: Manual
 on: [workflow_dispatch]
 
 jobs:
-  build:
+  jalanin-aja:
     runs-on: ubuntu-latest
     steps:
       - name: ngomong-lagi
