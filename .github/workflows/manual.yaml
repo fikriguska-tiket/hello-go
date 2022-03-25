@@ -1,10 +1,19 @@
 name: Manual
 
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "the name"
+        required: true
+        default: "bintang"
+      tampan:
+        required: false
+
 
 jobs:
   jalanin-aja:
     runs-on: ubuntu-latest
     steps:
       - name: ngomong-lagi
-        run: echo "ngomong lagi hehee"
+        run: echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\!"
