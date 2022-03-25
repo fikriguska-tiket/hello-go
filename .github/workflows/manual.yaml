@@ -24,3 +24,5 @@ jobs:
       - name: cek env
         run: |
           env
+      - name: cek secret
+        run: echo "${{secrets.my_secret}}"
