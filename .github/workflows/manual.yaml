@@ -2,7 +2,7 @@ name: Manual
 
 on: [workflow_dispatch]
 
-jons:
+jobs: tes aja
   build:
     runs-on: ubuntu-latest
     steps:
