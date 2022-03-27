@@ -27,7 +27,8 @@ jobs:
       - name: Docker authentication
         run: |-
           gcloud --quiet auth configure-docker
-          env
+          echo $PROJECT_ID > tes
+          cat tes
 
       - uses: google-github-actions/get-gke-credentials@fb08709ba27618c31c09e014e1d8364b02e5042e
         with:
