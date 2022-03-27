@@ -35,7 +35,7 @@ jobs:
           credentials: ${{ secrets.GKE_SA_KEY }}
 
       - name: Build image
-        run: |-
+        run: |
           docker build \
             --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
             --build-arg GITHUB_SHA="$GITHUB_SHA" \
