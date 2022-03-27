@@ -32,3 +32,13 @@ jobs:
           location: ${{ env.GKE_ZONE }}
           credentials: ${{ secrets.GKE_SA_KEY }}
 
+      - run: |-
+          kubectl
+
+  ruin:
+    name: ruinin njay
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |-
+          kubectl
