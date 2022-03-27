@@ -26,3 +26,4 @@ jobs:
           env
       - name: cek secret
         run: echo "${{secrets.my_secret}}"
+
