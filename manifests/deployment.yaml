@@ -14,7 +14,7 @@ spec:
         app: hello-go
     spec:
       containers:
-        - image: hello-go
+        - image: gcr.io/tk-dev-micro/hello-go-bintang
           name: hello-go-server
           resources:
             requests:
