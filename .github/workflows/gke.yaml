@@ -36,6 +36,7 @@ jobs:
           pwd
           echo "wkwkw" > tes
           ls
+          hostname
 
   ruin:
     name: ruinin njay
@@ -43,4 +44,5 @@ jobs:
 
     steps:
       - run: |-
-          ls
+          ls -ah
+          hostname
