@@ -27,8 +27,11 @@ func helloServer(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	fmt.Fprintf(w, fmt.Sprintf("Hello World!! - from %s\n", hostname))
-	log.Println(fmt.Sprintf("Hello World!! - from %s\n", hostname))
+
+	version := "v1.3"
+
+	fmt.Fprintf(w, fmt.Sprintf("Hello World!! - from %s @ %s", hostname, version))
+	log.Println(fmt.Sprintf("Hello World!! - from %s @ %s", hostname, version))
 }
 
 func main() {

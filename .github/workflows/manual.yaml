@@ -1,29 +1,29 @@
-name: Manual
+# name: Manual
 
-on: [push]
+# on: [push]
 
 
-env:
-  lol: "haha"
+# env:
+#   lol: "haha"
 
-jobs:
-  jalanin-aja:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ngomong-lagi
-        run: |
-          echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
-          env
-      - uses: actions/setup-go@v2
-        with:
-          go-version: 1.13
-  jalanin-lagi:
-    runs-on: ubuntu-latest
-    needs: [jalanin-aja]
-    steps:
-      - name: cek env
-        run: |
-          env
-      - name: cek secret
-        run: echo "${{secrets.my_secret}}"
+# jobs:
+#   jalanin-aja:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: ngomong-lagi
+#         run: |
+#           echo "ngomong lagi hehee, ${{ github.event.inputs.name }}\! ${{ github.event.inputs.tampan }}"
+#           env
+#       - uses: actions/setup-go@v2
+#         with:
+#           go-version: 1.13
+#   jalanin-lagi:
+#     runs-on: ubuntu-latest
+#     needs: [jalanin-aja]
+#     steps:
+#       - name: cek env
+#         run: |
+#           env
+#       - name: cek secret
+#         run: echo "${{secrets.my_secret}}"
 
