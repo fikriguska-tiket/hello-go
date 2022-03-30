@@ -1,7 +1,10 @@
 name: Deploy to GKE
 
 
-on: [push]
+on:
+  push:
+    tags:
+      '*'
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
