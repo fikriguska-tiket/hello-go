@@ -39,11 +39,12 @@ jobs:
           echo $GITHUB_ENV
           echo "===="
           env
-          docker build \
-            --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_REF" \
-            --build-arg GITHUB_SHA="$GITHUB_SHA" \
-            --build-arg GITHUB_REF="$GITHUB_REF" \
-            .
+          echo "::set-output name=tag::123"
+          # docker build \
+          #   --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_REF" \
+          #   --build-arg GITHUB_SHA="$GITHUB_SHA" \
+          #   --build-arg GITHUB_REF="$GITHUB_REF" \
+          #   .
 
       - name: Publish image to Google Cloud Registry
         run: |-
